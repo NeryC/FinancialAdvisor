@@ -1,0 +1,10 @@
+.fondo {
+  background-color: darkblue;
+  color: white;
+}
+
+.ajuste {
+  position: relative;
+  margin: 0 auto 2.5rem;
+  width: 90%;
+}
