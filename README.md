@@ -2,8 +2,6 @@
 
 ## Description
 
-financial advisor
-
 [illustrative video](https://drive.google.com/file/d/1GKN_zL7xShZDr0b84B0d8dwJdAH9_5Yj/view?usp=sharing)
 
 ## Getting Started
