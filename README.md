@@ -4,6 +4,8 @@
 
 financial advisor
 
+[illustrative video](https://drive.google.com/file/d/1GKN_zL7xShZDr0b84B0d8dwJdAH9_5Yj/view?usp=sharing)
+
 ## Getting Started
 
 ### Installing
@@ -25,4 +27,4 @@ npm run start
 ## Authors
 
 Contributors names and contact info
-[@nery_cano0](er.com/nery_cano0)
+[@nery_cano0](https://twitter.com/nery_cano0)
