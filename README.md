@@ -1,4 +1,4 @@
-# Project Title
+# Financial Advisor
 
 ## Description
 
@@ -26,5 +26,4 @@ npm run start
 
 ## Authors
 
-Contributors names and contact info
 [@nery_cano0](https://twitter.com/nery_cano0)
