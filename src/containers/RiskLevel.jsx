@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-import { Button } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 
 import RiskDonut from '../components/RiskDonut';
@@ -19,7 +18,7 @@ function handleRenderItemClick(renderItem, setRenderItem) {
   }
 }
 
-function RiskLevel() {
+function RiskLevel({ history }) {
   const [renderItem, setRenderItem] = useState(TABLE);
   const parentRef = useRef(null);
   const riskSelected = useSelector((state) => state.riskSelected);
@@ -31,20 +30,22 @@ function RiskLevel() {
       <RiskSelector />
       <div className="ajuste text-center" ref={parentRef}>
         <div className="mb-4">
-          <Button
-            className="mr-3"
-            variant="success"
+          <button
+            type="button"
+            className="btn btn-success mr-3"
             disabled={isDisabledButton}
+            onClick={() => history.push('/personalized')}
           >
             Continue
-          </Button>
-          <Button
-            variant="primary"
+          </button>
+          <button
+            type="button"
+            className="btn btn-primary"
             onClick={() => handleRenderItemClick(renderItem, setRenderItem)}
             disabled={isDisabledButton}
           >
-            {renderItem === TABLE ? CHART : TABLE}
-          </Button>
+            {renderItem === TABLE ? 'Chart' : 'Table'}
+          </button>
         </div>
         {renderItem === TABLE ? (
           <RiskTable />

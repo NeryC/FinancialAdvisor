@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign */
 import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import '../styles/components/RiskSelector.css';
 
@@ -18,6 +18,7 @@ function setBubble(range, bubble) {
 
 function RiskSelector() {
   const dispatch = useDispatch();
+  const riskSelected = useSelector((state) => state.riskSelected);
 
   useEffect(() => {
     const range = document.querySelector('.range');
@@ -45,7 +46,7 @@ function RiskSelector() {
           min="0"
           max="10"
           step="1"
-          defaultValue="0"
+          defaultValue={riskSelected}
         />
         <output className="bubble" />
       </div>

@@ -6,6 +6,8 @@ import RiskLevel from '../containers/RiskLevel';
 import Personalized from '../containers/Personalized';
 import NotFound from '../containers/NotFound';
 
+import '../styles/GlobalStyles.css';
+
 function App() {
   return (
     <BrowserRouter>
